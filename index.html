@@ -146,6 +146,17 @@
             font-size: 4em;
             margin: 0 auto;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
         
         /* Skills */
@@ -360,7 +371,12 @@
         <h2>About Me</h2>
         <div class="about-grid">
             <div class="about-image">
-                <div class="profile-pic">IT</div>
+                <div class="profile-pic">
+                    <!-- Вариант 1: Добавьте ваше фото здесь -->
+                    <img src="images:photo.JPG" alt="Insaniyat Tungushpayeva">
+                    <!-- Вариант 2: Или используйте инициалы как запасной вариант -->
+                    <span style="display: none;">IT</span>
+                </div>
             </div>
             <div class="about-text">
                 <p>I'm a passionate Business Analyst with a strong technical background, currently transitioning into Product Management. With experience spanning from software development to business process optimization, I bring a unique perspective to creating data-driven solutions.</p>
