@@ -33,10 +33,31 @@
         
         /* Header */
         header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             color: white;
             padding: 60px 0;
             text-align: center;
+            position: relative;
+        }
+        
+        /* Add overlay for better text readability */
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(30, 41, 59, 0.7); /* Dark overlay */
+            z-index: 1;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
         }
         
         .header-content h1 {
@@ -432,7 +453,6 @@
                 <a href="tel:+77077377208">📱 +7 707 737 7208</a>
                 <a href="#" target="_blank">💼 LinkedIn</a>
                 <a href="https://github.com/Ssberry19" target="_blank">💻 GitHub</a>
-                <a href="#" target="_blank">🌐 Portfolio</a>
             </div>
         </div>
     </header>
@@ -459,9 +479,9 @@
                 </div>
             </div>
             <div class="about-text">
-                <p>Ambitious Business Analyst with a technical background, experienced in client interaction and project management. Eager to transition into product management, leveraging technical knowledge, business process understanding, and a client-centric approach to build successful products.</p>
-                <p>My journey spans entrepreneurial ventures, international education, and diverse industry experience. I believe in technology's power to solve real-world problems and live by the principle: "Fortune favors the bold."</p>
-                <p>Currently based in Astana, Kazakhstan. Fluent in Kazakh, Russian, and English, with basic Turkish from an exchange semester.</p>
+                <p>Ambitious <strong>Business Analyst</strong> with a technical background, experienced in <strong>client interaction</strong> and <strong>project management</strong>. Eager to transition into <strong>product management</strong>, leveraging technical knowledge, business process understanding, and a client-centric approach to build successful products.</p>
+                <p>My journey spans <strong>entrepreneurial ventures</strong>, <strong>international education</strong>, and diverse industry experience. I believe in technology's power to solve real-world problems.</p>
+                <p>Currently based in <strong>Astana, Kazakhstan</strong>. Fluent in <strong>Kazakh</strong>, <strong>Russian</strong>, and <strong>English</strong>, with basic Turkish from an exchange semester.</p>
             </div>
         </div>
     </section>
