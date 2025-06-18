@@ -25,7 +25,6 @@
             line-height: 1.6;
             color: var(--text);
             background: var(--light);
-            /* background-image: url('background.jpg'); */
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
@@ -36,8 +35,7 @@
             background-image: url('background.jpg');
             background-size: cover;
             background-position: center;
-            background-attachment: scroll;
-            background-repeat: no-repeat;
+            background-attachment: fixed;
             color: white;
             padding: 60px 0;
             text-align: center;
@@ -438,57 +436,9 @@
         @media (max-width: 768px) {
             .header-content h1 { font-size: 2em; }
             .about-grid { grid-template-columns: 1fr; }
+            nav ul { flex-direction: column; align-items: center; }
             .timeline { padding-left: 20px; }
             .contact-links a { margin: 5px; }
-            
-            /* Beautiful mobile navigation */
-            nav ul { 
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 10px;
-                padding: 20px 15px;
-                max-width: 400px;
-                margin: 0 auto;
-            }
-            
-            nav a {
-                display: block;
-                padding: 12px 15px;
-                text-align: center;
-                background: rgba(255, 255, 255, 0.1);
-                border: 1px solid rgba(255, 255, 255, 0.2);
-                border-radius: 20px;
-                color: white;
-                text-decoration: none;
-                font-weight: 500;
-                font-size: 0.9em;
-                transition: all 0.3s ease;
-                backdrop-filter: blur(10px);
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            }
-            
-            nav a:hover {
-                background: rgba(255, 255, 255, 0.2);
-                border-color: rgba(255, 255, 255, 0.4);
-                transform: translateY(-2px);
-                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-                color: var(--accent);
-            }
-            
-            nav a:active {
-                transform: translateY(0);
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            }
-            
-            /* Make the last item span full width if odd number of items */
-            nav li:last-child {
-                grid-column: 1 / -1;
-            }
-            
-            nav li:last-child a {
-                max-width: 180px;
-                margin: 0 auto;
-            }
         }
     </style>
 </head>
@@ -499,7 +449,7 @@
             <p>Business Analyst | Future Product Manager</p>
             <div class="contact-links">
                 <a href="mailto:insaniyat.tungushpayeva@gmail.com">📧 Email</a>
-                <a href="tel:+77021687208">📱 Call</a>
+                <a href="tel:+77021687208">📱 +7 702 168 7208</a>
                 <a href="https://www.canva.com/design/DAGqh7ADfYE/9bdA80dH8d-RYoIcJo-kZQ/edit?utm_content=DAGqh7ADfYE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">📄 CV</a>
                 <a href="https://github.com/Ssberry19" target="_blank">💻 GitHub</a>
             </div>
@@ -523,9 +473,10 @@
         <div class="about-grid">
             <div class="about-image">
                 <div class="profile-pic">
-                    <img src="photo.jpg" alt="Insaniyat Tungushpayeva">
+                    <!-- Вариант 1: Добавьте ваше фото здесь -->
+                    <img src="your-photo.jpg" alt="Insaniyat Tungushpayeva">
+                    <!-- Вариант 2: Или используйте инициалы как запасной вариант -->
                     <span style="display: none;">IT</span>
-                    <span>IT</span>
                 </div>
             </div>
             <div class="about-text">
@@ -542,25 +493,30 @@
             <div class="skill-category">
                 <h3>Technical Skills</h3>
                 <div class="skill-tags">
+                    <span class="skill-tag">Dart</span>
                     <span class="skill-tag">Python</span>
                     <span class="skill-tag">JavaScript</span>
                     <span class="skill-tag">Java</span>
                     <span class="skill-tag">C#</span>
-                    <span class="skill-tag">Dart</span>
                     <span class="skill-tag">HTML/CSS</span>
-                    <span class="skill-tag">Scala</span>
                     <span class="skill-tag">Flutter</span>
                     <span class="skill-tag">Django</span>
                     <span class="skill-tag">Express.js</span>
                     <span class="skill-tag">Node.js</span>
                     <span class="skill-tag">RESTful APIs</span>
-                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">NoSQL</span>
                     <span class="skill-tag">PostgreSQL</span>
                     <span class="skill-tag">MongoDB</span>
                     <span class="skill-tag">AWS</span>
                     <span class="skill-tag">Docker</span>
                     <span class="skill-tag">Git</span>
                     <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">Scikit-learn</span>
+                    <span class="skill-tag">FastAPI</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">Postman</span>
+                    <span class="skill-tag">pgAdmin</span>
+                    <span class="skill-tag">VirtualBox</span>
                 </div>
             </div>
             <div class="skill-category">
@@ -574,9 +530,16 @@
                     <span class="skill-tag">UAT Execution</span>
                     <span class="skill-tag">Data Analysis</span>
                     <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Excel</span>
+                    <span class="skill-tag">Google Analytics</span>
                     <span class="skill-tag">Agile/Scrum</span>
                     <span class="skill-tag">Jira</span>
                     <span class="skill-tag">Confluence</span>
+                    <span class="skill-tag">SMAX</span>
+                    <span class="skill-tag">Trello</span>
+                    <span class="skill-tag">Asana</span>
+                    <span class="skill-tag">Slack</span>
+                    <span class="skill-tag">LucidChart</span>
                 </div>
             </div>
             <div class="skill-category">
@@ -602,27 +565,27 @@
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Business Analyst</h3>
-                    <div class="timeline-meta">BTS (Business & Technology Services) | August 2024 — May 2025 | Astana, Kazakhstan | Hybrid</div>
+                    <div class="timeline-meta">BTS (Business & Technology Services) in ERG | August 2024 — May 2025 | Astana, Kazakhstan | Hybrid</div>
                     <ul>
-                        <li>Participated in business process improvement projects for client companies.</li>
-                        <li>Managed the lifecycle of 100+ requests, from opening to successful closing.</li>
-                        <li>Conducted business requirements analysis and formulated technical specifications for the development team.</li>
-                        <li>Coordinated work between clients and technical specialists.</li>
-                        <li>Implemented workflow improvements to enhance team efficiency.</li>
+                        <li>Participated in business process improvement projects for internal client companies</li>
+                        <li>Managed the lifecycle (SLA) of 1000+ requests, from opening to successful closing</li>
+                        <li>Conducted business requirements analysis and formulated technical specifications for the development team</li>
+                        <li>Coordinated work and conducted meetings between clients and technical specialists</li>
+                        <li>Implemented workflow improvements to enhance team efficiency</li>
                     </ul>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Lead Technical Support Manager</h3>
-                    <div class="timeline-meta">Sagi | May 2023 — March 2024 | 11 months | Remote</div>
+                    <div class="timeline-meta">Sagi (TOO "Zumdex") | May 2023 — February 2024 | 10 months | Remote</div>
                     <ul>
-                        <li>Represented the brand through video/audio calls and client correspondence.</li>
-                        <li>Provided client training in three languages (Kazakh/Russian/English).</li>
-                        <li>Advised on optimal service packages and marketing tools.</li>
-                        <li>Developed a reporting system and created a library of video/text guides for clients.</li>
-                        <li>Coordinated technical support team's work and task distribution.</li>
-                        <li>Successfully retained clients, persuading them to renew subscriptions.</li>
+                        <li>Represented the brand through video/audio calls and client correspondence</li>
+                        <li>Provided client training in three languages (Kazakh/Russian/English)</li>
+                        <li>Advised on optimal service packages and marketing tools</li>
+                        <li>Developed a reporting system and created a library of video/text guides for clients</li>
+                        <li>Coordinated technical support team's work and task distribution</li>
+                        <li>Successfully retained clients, persuading them to renew product subscriptions</li>
                     </ul>
                 </div>
             </div>
@@ -631,8 +594,8 @@
                     <h3>Tour Guide</h3>
                     <div class="timeline-meta">Ailand | May 2022 — September 2022 | 5 months | Summer Job</div>
                     <ul>
-                        <li>Conducted tours in three languages (Russian/Kazakh/English).</li>
-                        <li>Developed public speaking and audience engagement skills.</li>
+                        <li>Conducted tours in three languages (Russian/Kazakh/English)</li>
+                        <li>Developed public speaking and audience engagement skills</li>
                     </ul>
                 </div>
             </div>
@@ -641,10 +604,10 @@
                     <h3>Targetologist</h3>
                     <div class="timeline-meta">Kidburg | June 2021 — February 2022 | 9 months</div>
                     <ul>
-                        <li>Launched advertising campaigns in Facebook Ads Manager and Google Ads.</li>
-                        <li>Attracted effective leads with a 3.5% conversion rate.</li>
-                        <li>Engaged in SMM, copywriting, and results analytics.</li>
-                        <li>Conducted arbitrage and worked with target audiences.</li>
+                        <li>Launched advertising campaigns in Facebook Ads Manager and Google Ads</li>
+                        <li>Attracted effective leads with a 3.5% conversion rate</li>
+                        <li>Engaged in SMM, copywriting, and results analytics</li>
+                        <li>Conducted arbitrage and worked with target audiences</li>
                     </ul>
                 </div>
             </div>
@@ -653,10 +616,10 @@
                     <h3>Call Center Operator</h3>
                     <div class="timeline-meta">Elite Parfume | September 2020 — February 2021 | 6 months</div>
                     <ul>
-                        <li>Worked with various types of calls (hot, cold, warm leads).</li>
-                        <li>Used Bitrix24 CRM for client base management.</li>
-                        <li>Achieved and exceeded sales targets.</li>
-                        <li>Negotiated in three languages.</li>
+                        <li>Worked with various types of calls (hot, cold, warm leads)</li>
+                        <li>Used Bitrix24 CRM for client base management</li>
+                        <li>Achieved and periodically exceeded sales targets</li>
+                        <li>Negotiated in two languages</li>
                     </ul>
                 </div>
             </div>
@@ -668,16 +631,19 @@
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-header">
-                    <h3>🏋️ ML Fitness App</h3>
+                    <h3>🏋️ ML Fitness App "Morphé"</h3>
                 </div>
                 <div class="project-content">
-                    <p>Personalized mobile application for workouts and nutrition with ML-powered recommendations based on user's physiological characteristics. Includes program adaptation algorithms and performance analytics.</p>
+                    <p>Diploma project - Personalized mobile application for workouts and nutrition with ML-powered recommendations based on user's physiological characteristics. Backend on Django REST Framework with PostgreSQL database and Docker deployment. ML models integrated via FastAPI.</p>
                     <div class="project-tech">
                         <span class="skill-tag">Flutter</span>
                         <span class="skill-tag">Django REST</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Docker</span>
                         <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Analytics</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Scikit-learn</span>
                     </div>
                 </div>
             </div>
@@ -700,7 +666,7 @@
                     <h3>🎵 Konoha Music Studio</h3>
                 </div>
                 <div class="project-content">
-                    <p>Co-founder and head of my own business project. Taught 10 students to play dombra and piano, developed curriculum and managed operational activities.</p>
+                    <p>Co-founder and teacher in my own business project. Helped launch the business from scratch. Taught 10 students to play dombra and piano, developed curriculum and managed operational activities.</p>
                     <div class="project-tech">
                         <span class="skill-tag">Entrepreneurship</span>
                         <span class="skill-tag">Education</span>
@@ -718,15 +684,15 @@
             <div class="education-card">
                 <h3>Bachelor of Computer Science</h3>
                 <div class="education-meta">Astana IT University (AITU) | 2022 — 2025 | Astana</div>
-                <p><strong>GPA:</strong> 3.17/4.00</p>
+                <p><strong>GPA:</strong> 3.11/4.00</p>
                 <p><strong>Specialization:</strong> Information Technology, Computer Science</p>
-                <p><strong>Exchange Semester:</strong> ODTÜ (Turkey) - Computer Engineering (Spring 2024)</p>
+                <p><strong>Exchange Semester:</strong> ODTÜ (Turkey) - Computer Engineering (Spring - Summer 2024)</p>
             </div>
             <div class="education-card">
                 <h3>Secondary Education</h3>
-                <div class="education-meta">Nazarbayev Intellectual School FMN | 2016 — 2022 | Nur-Sultan</div>
+                <div class="education-meta">Nazarbayev Intellectual School FMN | 2016 — 2022 | Astana</div>
                 <p><strong>GPA:</strong> 5.00/5.00 (Certificate of Excellence)</p>
-                <p><strong>Profile:</strong> Physics-Mathematics, Computer Science</p>
+                <p><strong>Profile:</strong> Physics, Higher Mathematics, Computer Science</p>
             </div>
             <div class="education-card">
                 <h3>Additional Education</h3>
@@ -747,7 +713,6 @@
         </div>
     </section>
     
-    
     <section id="activities">
         <h2>Additional Activities</h2>
         <div class="timeline">
@@ -761,7 +726,7 @@
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>🎬 Actress</h3>
-                    <div class="timeline-meta">Professional Theater | 2018 — Present</div>
+                    <div class="timeline-meta">Professional Theater | 2018 — 2023</div>
                     <p>Main role in the TV series "We" (2018). Participated in musical performances including "The Lion King" and "Abai 45" directed by Mukhtar Dungeshev.</p>
                 </div>
             </div>
@@ -774,18 +739,18 @@
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>🏐 University Clubs</h3>
-                    <div class="timeline-meta">AITU | 2022 — Present</div>
-                    <p><strong>Music Club:</strong> Grand Prix winner at "Talent Show" during admission<br>
-                    <strong>Volleyball Team:</strong> Advanced to the highest bracket in university tournament</p>
+                    <h3>🏐 University Activities</h3>
+                    <div class="timeline-meta">AITU | 2022 — 2025</div>
+                    <p><strong>Music Club:</strong> Grand Prix winner at "Talent Show" during admission. Active participant in university musical events. Received gratitude from the rector for active contribution to university social life.<br>
+                    <strong>Volunteer Team:</strong> Helped organize and conduct various events in/outside the university</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>🎼 School Activities</h3>
                     <div class="timeline-meta">NIS | 2017 — 2022</div>
-                    <p><strong>Music Department:</strong> Dombra player in school ensemble, teaching assistant<br>
-                    <strong>Volleyball Team:</strong> Team member playing libero and striker positions</p>
+                    <p><strong>Music Department:</strong> Dombra player in school ensemble & solo vocalist, teaching assistant. Organizer of school and inter-school concerts.<br>
+                    <strong>Volleyball Team:</strong> Team member playing libero and striker positions (2019-2022)</p>
                 </div>
             </div>
         </div>
@@ -812,7 +777,6 @@
             </div>
         </div>
     </section>
-
 
     <footer style="background: var(--dark); color: white; text-align: center; padding: 40px 20px; margin-top: 60px;">
         <p style="margin-bottom: 20px; font-size: 1.2em;">"Fortune favors the bold"</p>
